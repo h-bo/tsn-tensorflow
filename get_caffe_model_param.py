@@ -16,6 +16,7 @@ dict_name = net.params
 # bn_names_order = [t for t in net.params.keys() if 'batchnorm' in t]
 param_dict = {}
 for key,value in net.params.items():
+    pdb.set_trace()
     param_dict[key] = [t.data for t in value]
 
 save_obj(param_dict, save_name)
